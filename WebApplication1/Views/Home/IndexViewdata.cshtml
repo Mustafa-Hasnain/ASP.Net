@@ -5,7 +5,6 @@
 
 <h2>IndexViewdata</h2>
 
-@foreach (var week in ViewData["Weeks"] as List<string>)
-            {
+@foreach (var week in ( List<string>) ViewData["Weeks"] )            {
                 <li>@week</li>
             }
