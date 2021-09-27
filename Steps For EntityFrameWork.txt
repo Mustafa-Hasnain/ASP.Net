@@ -1,0 +1,12 @@
+1 install entity (solution men jakar nuGet)
+2 model class
+3 context(EntityClass) class in model 
+4 database sql
+5 conectionstring webconfig ;
+6 map table in modelclass [Table("info")]
+7 global 
+    Database.SetInitializer<hereyoureprojectname.Models.StudentContext>(null);
+8 controller 
+  StudentContext st = new StudentContext();
+  Student obj = st.student.Single(x=>x.Id == id); //x => x.id == id
+view
