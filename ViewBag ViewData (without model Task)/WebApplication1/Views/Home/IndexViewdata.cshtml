@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewBag.Title = "IndexViewdata";
+}
+
+<h2>IndexViewdata</h2>
+
+@foreach (var week in ViewData["Weeks"] as List<string>)
+            {
+                <li>@week</li>
+            }

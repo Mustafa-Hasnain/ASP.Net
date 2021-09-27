@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Viewbag";
+}
+
+<h2>Viewbag</h2>
+<h1>@ViewBag.Name;</h1>
+
+@foreach (var month in ViewBag.Months)
+            {
+                <li>@month</li>
+            };
